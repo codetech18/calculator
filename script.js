@@ -3,6 +3,11 @@ const buttons = document.querySelectorAll('button');
 
 buttons.forEach((item) =>{
     item.onclick = () =>{
+      switch(display == item.id) {
+        case 'sin':
+          
+      }
+
         if (item.id == 'clear'){
             display.innerText = '';
         } else if (item.id == 'backspace') {
@@ -13,41 +18,53 @@ buttons.forEach((item) =>{
         }  else if (display.innerText == '' && item.id =='equal'){
             display.innerText = 'Empty';
             setTimeout(() =>  (display.innerText =''), 2000);
-        } else if (item.id == 'sin') {
-            console.log('sin function called');
-            var input = document.getElementById("display").value;
-            if (isNaN(input)) {
-              display.innerText = 'Invalid input';
-            } else {
-              var radians = input * (Math.PI / 100);
-              var result = Math.sin(radians);
-              display.innerText = result;
-            }
-        } else if (item.id == 'cos') {
-            console.log('cos function called');
-            var input = document.getElementById("display").value;
-            if (isNaN(input)) {
-              display.innerText = 'Invalid input';
-            } else {
-              var radians = input * (Math.PI / 100);
-              var result = Math.cos(radians);
-              display.innerText = result;
-            }
-        } else if (item.id == 'sqrt2') {
-            console.log('squre function called');
-            var input = document.getElementById("display").value;
-            if (isNaN(input)) {
-              display.innerText = 'Invalid input';
-            } else {
-              var result = Math.sqrt(input);
-              display.innerText = result;
-            }
+//         } else if (item.id == 'sin') {
+//           // display.innerText += item.id
+//           //  display.innerText = display.innerText+item.id
+//           display.innerText = display.innerText+Math.sin
+
+
+
+
+
+//             var input = document.getElementById("display").value;
+//             console.log(input)
+//             let result = Math.sin(input);
+//             console.log(result)
+//             display.innerText=result
+//             // if (isNaN(input)) {
+//             //   display.innerText = 'Invalid input';
+//             // }
+//             //  else {
+//               // var radians = input * (Math.PI / 100);
+//               // var result = Math.sin(radians);
+//               // display.innerText = result;
+//             // }
+//         } else if (item.id == 'cos' ) {
+//             console.log('cos function called');
+//             var input = document.getElementById("display").value;
+//             if (isNaN(input)) {
+//               display.innerText = 'Invalid input';
+//             } else {
+//               var radians = input * (Math.PI / 100);
+//               var result = Math.cos(radians);
+//               display.innerText = result;
+//             }
+//         } else if (item.id == 'sqrt2') {
+//             console.log('squre function called');
+//             var input = document.getElementById("display").value;
+//             if (isNaN(input)) {
+//               display.innerText = 'Invalid input';
+//             } else {
+//               var result = Math.sqrt(input);
+//               display.innerText = result;
+//             }
         } else {
             display.innerText += item.id
         }
     }
     
-})
+// })
 
 // window.onload = function() {
 //     document.getElementById("sin").addEventListener("click", function sin() {
@@ -71,7 +88,7 @@ buttons.forEach((item) =>{
           
           
     
-//     })
+    })
 // }
 
 

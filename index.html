@@ -24,18 +24,8 @@
                         <td><button type="button" class="btn-operator" id="*">&times;</button></td>
                         <td><button type="button" class="btn-operator" id="backspace"><</button></td>
                     </tr>
-                    <tr>
-                        <td><button type="button" class="btn-operator" id="%">%</button></td>
-                        <td><button type="button" class="btn-operator" id="sin">sin</button></td>
-                        <td><button type="button" class="btn-operator" id="cos" onclick="cos()">cos</button></td>
-                        <td><button type="button" class="btn-operator" id="tan" onclick="tan()">tan</button></td>
-                    </tr>
-                    <tr>
-                        <td><button type="button" class="btn-operator" id="x^2" onclick="square()">x^2</button></td>
-                        <td><button type="button" class="btn-operator" value="x^3" onclick="qubbed">x^3</button></td>
-                        <td><button type="button" class="btn-operator" value="sqrt2" onclick="sqrt2()">&radic;</button></td>
-                        <td><button type="button" class="btn-operator" value="sqrt3" onclick="sqrt3()">&#8731;</button></td>
-                    </tr>
+                    
+                    
                     <tr>
                         <td><button type="button" class="btn-number" id="7">7</button></td>
                         <td><button type="button" class="btn-number" id="8">8</button></td>
@@ -64,15 +54,17 @@
         </div>
     </div>
     <script src="script.js">
-        // document.querySelector('#sin').addEventListener('click', sin)
+        // var screen = document.querySelector('#display');
+        // var btn = document.querySelectorAll('button');
 
-        
-        function cos(){
-            document.calculator.result.value=Math.cos(document.calculator.result.value);
-        }
-        function tan(){
-            document.calculator.result.value=Math.tan(document.calculator.result.value);
-        }
+
+        // for(item of btn) 
+        // {
+        //     item.addEventListener('click',(e)=>{
+        //         btntext=e.target.innerText;
+        //         screen.value+=btntext; 
+        //     });
+        // }
     </script>
 </body>
 </html>
